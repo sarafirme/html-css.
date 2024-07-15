@@ -2,7 +2,7 @@
 margin: 0;
 padding: 0;
 }
-body{
+#product-card{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,13 +42,13 @@ body{
     color: #5c5c5c;
 }
 .card button{
-    background-color: blue;
+    background-color: rgb(140, 113, 167);
     height: 30px;
-    border: ;
-    padding: ;
-    width: ;
-    font-size: 
-    color: ;
-
-
+    border:none;
+    padding: 4px;
+    width: 80%;
+    color:white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
 }
