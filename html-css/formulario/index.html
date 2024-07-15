@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- meta dados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo da Página (Aparece na aba) -->
+    <title>Cadastro</title>
+    <!-- link folha de estilo css -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+
+</head>
+<body>
+    <!-- Cabeçalho com tirulo e subtitulo -->
+    <div>
+        <h1 id="titulo">Cadastro de Alunos</h1>
+    </div>
+
+    <!-- Inicio do Formulario -->
+
+    <form>
+        
+        <fieldset class="grupo">
+
+            <div class="campo">
+                  <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+
+                <label for="nome"><strong>Nome</strong></label>
+
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+
+             <div class="campo">
+                  <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+
+                <input type="text" name="sobrenome" id="sobrenome" required>
+
+             </div>
+
+         </fieldset>
+
+         <!-- Email e senha -->
+         <fieldset class="grupo">
+
+            <div class="campo">
+                <label for="email"> <strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="password"> <strong>Senha</strong></label>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+         </fieldset>
+
+            <!-- Data de Nascimento e curso -->
+         <div class="campo">
+            <div class="campo">
+                <label for="nasc"><strong>Data de Nascimento</strong></label>
+                <input type="date" name="nasc" id="nasc" required>
+            </div> <br>
+            <label><strong>Curso</strong></label> <br>
+            <label>
+                <input type="radio" name="curso" value="frond-end"> Front-end
+            </label> <br>
+            <label>
+                <input type="radio" name="curso" value="back-end"> Back-end
+            </label> <br>
+            <label>
+                <input type="radio" name="curso" value="full-stack"> Full-stack
+            </label>
+
+         </div>  <br>
+
+         <!-- Turno -->
+         <div class="campo">
+            <label><strong>Turno</strong></label> <br>
+            <select>
+                <option selected disabled>Selecione</option>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+         </div> <br>
+
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Experiências:</strong></label> <br>
+
+                <input type="checkbox" id="linguagem1" name="linguagem1" value="HTML">
+
+                <label for="tecnologia1">HTML</label>
+
+                <input type="checkbox" id="linguagem2" name="linguagem2" value="CSS">
+
+                <label for="tecnologia1">CSS</label>
+
+                <input type="checkbox" id="linguagem3" name="linguagem3" value="JS">
+
+                <label for="tecnologia1">JavaScript</label>
+             </div>
+
+        </fieldset>  <br>
+                    <!-- Caixa de texto -->
+       
+            <div class="campo">
+                <label for="experiencia"><strong>Conte como conheceu o programa</strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"> </textarea>
+
+            </div>
+
+     
+
+            <!-- Botão -->
+        <button type="submit" onsubmit="" class="botao">Cadastrar</button>
+    </form>
+    
+</body>
+</html>
